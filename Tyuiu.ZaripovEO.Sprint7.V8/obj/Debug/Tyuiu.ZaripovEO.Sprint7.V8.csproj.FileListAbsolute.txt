@@ -1,0 +1,11 @@
+C:\Users\zarip\source\repos\Tyuiu.ZaripovEO.Sprint7\Tyuiu.ZaripovEO.Sprint7.V8\bin\Debug\Tyuiu.ZaripovEO.Sprint7.V8.exe.config
+C:\Users\zarip\source\repos\Tyuiu.ZaripovEO.Sprint7\Tyuiu.ZaripovEO.Sprint7.V8\bin\Debug\Tyuiu.ZaripovEO.Sprint7.V8.exe
+C:\Users\zarip\source\repos\Tyuiu.ZaripovEO.Sprint7\Tyuiu.ZaripovEO.Sprint7.V8\bin\Debug\Tyuiu.ZaripovEO.Sprint7.V8.pdb
+C:\Users\zarip\source\repos\Tyuiu.ZaripovEO.Sprint7\Tyuiu.ZaripovEO.Sprint7.V8\obj\Debug\Tyuiu.ZaripovEO.Sprint7.V8.csproj.AssemblyReference.cache
+C:\Users\zarip\source\repos\Tyuiu.ZaripovEO.Sprint7\Tyuiu.ZaripovEO.Sprint7.V8\obj\Debug\Tyuiu.ZaripovEO.Sprint7.V8.FormMain.resources
+C:\Users\zarip\source\repos\Tyuiu.ZaripovEO.Sprint7\Tyuiu.ZaripovEO.Sprint7.V8\obj\Debug\Tyuiu.ZaripovEO.Sprint7.V8.Properties.Resources.resources
+C:\Users\zarip\source\repos\Tyuiu.ZaripovEO.Sprint7\Tyuiu.ZaripovEO.Sprint7.V8\obj\Debug\Tyuiu.ZaripovEO.Sprint7.V8.csproj.GenerateResource.cache
+C:\Users\zarip\source\repos\Tyuiu.ZaripovEO.Sprint7\Tyuiu.ZaripovEO.Sprint7.V8\obj\Debug\Tyuiu.ZaripovEO.Sprint7.V8.csproj.CoreCompileInputs.cache
+C:\Users\zarip\source\repos\Tyuiu.ZaripovEO.Sprint7\Tyuiu.ZaripovEO.Sprint7.V8\obj\Debug\Tyuiu.ZaripovEO.Sprint7.V8.exe
+C:\Users\zarip\source\repos\Tyuiu.ZaripovEO.Sprint7\Tyuiu.ZaripovEO.Sprint7.V8\obj\Debug\Tyuiu.ZaripovEO.Sprint7.V8.pdb
+C:\Users\zarip\source\repos\Tyuiu.ZaripovEO.Sprint7\Tyuiu.ZaripovEO.Sprint7.V8\obj\Debug\Tyuiu.ZaripovEO.Sprint7.V8.FormWelcomeCheck.resources

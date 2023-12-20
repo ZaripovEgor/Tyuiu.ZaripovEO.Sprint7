@@ -1,0 +1,14 @@
+Plate;Auto mark;Condition;Place at moment;Average speed;Max Weight;Fuel Consuption
+U 197 NU 72;GAZel 3302;Ok;In transit;55;1850;9,4
+C 443 UN 72;GAZel Next;Brand new;In transit;60;1700;8,6
+V 360 EU 89;GAZel 3302;Ok;In transit;55;1850;9,7
+E 238 KA 86;GAZel Next;Body damage;In transit;60;1700;10
+R 374 MO 72;GAZel 3302;Ok;Surgut;36;1850;11,3
+P 094 MA 86;GAZel  3302;Engine failure;Tyumen;0;1850;0
+O 586 IV 89;GAZel  3302;Ok;Tobolsk;34;1850;11,4
+U 150 VN 72;GAZel Next;Brand new;In transit;63;1700;8,7
+K 456 FD 72;GAZel  3302;Brand new;Noyabrsk;47;1850;9,1
+C 717 UT 86;GAZel Next;Suspension damage;Surgut;0;1700;11,7
+A 746 UE 72;GAZel  33023;Ok;In transit;64;1900;9,8
+E 669 ER 89;GAZel Next;Body damage;Tyumen;40;1700;10,5
+M 170 TT 72;GAZel  33023;Brand new;In transit;57;1900;9,7
