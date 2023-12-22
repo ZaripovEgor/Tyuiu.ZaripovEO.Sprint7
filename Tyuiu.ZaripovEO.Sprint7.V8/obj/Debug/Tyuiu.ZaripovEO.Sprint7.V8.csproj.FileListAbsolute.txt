@@ -8,4 +8,5 @@ C:\Users\zarip\source\repos\Tyuiu.ZaripovEO.Sprint7\Tyuiu.ZaripovEO.Sprint7.V8\o
 C:\Users\zarip\source\repos\Tyuiu.ZaripovEO.Sprint7\Tyuiu.ZaripovEO.Sprint7.V8\obj\Debug\Tyuiu.ZaripovEO.Sprint7.V8.csproj.CoreCompileInputs.cache
 C:\Users\zarip\source\repos\Tyuiu.ZaripovEO.Sprint7\Tyuiu.ZaripovEO.Sprint7.V8\obj\Debug\Tyuiu.ZaripovEO.Sprint7.V8.exe
 C:\Users\zarip\source\repos\Tyuiu.ZaripovEO.Sprint7\Tyuiu.ZaripovEO.Sprint7.V8\obj\Debug\Tyuiu.ZaripovEO.Sprint7.V8.pdb
-C:\Users\zarip\source\repos\Tyuiu.ZaripovEO.Sprint7\Tyuiu.ZaripovEO.Sprint7.V8\obj\Debug\Tyuiu.ZaripovEO.Sprint7.V8.FormWelcomeCheck.resources
+C:\Users\zarip\source\repos\Tyuiu.ZaripovEO.Sprint7\Tyuiu.ZaripovEO.Sprint7.V8\obj\Debug\Tyuiu.ZaripovEO.Sprint7.V8.FormAdd.resources
+C:\Users\zarip\source\repos\Tyuiu.ZaripovEO.Sprint7\Tyuiu.ZaripovEO.Sprint7.V8\obj\Debug\Tyuiu.ZaripovEO.Sprint7.V8.FormWelcome.resources

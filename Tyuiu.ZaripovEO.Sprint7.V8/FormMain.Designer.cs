@@ -32,22 +32,24 @@ namespace Tyuiu.ZaripovEO.Sprint7.V8
             this.tabControlMain = new System.Windows.Forms.TabControl();
             this.tabPageMenu = new System.Windows.Forms.TabPage();
             this.tabPageTable = new System.Windows.Forms.TabPage();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.buttonChoose = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnNumPlate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnAuto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnWhere = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnV_avrg = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnMaxWeight = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnFuel = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPageChart = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
             this.labelPersonal = new System.Windows.Forms.Label();
             this.labelName = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.openFileDialogCSV = new System.Windows.Forms.OpenFileDialog();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.labelPlate = new System.Windows.Forms.Label();
+            this.buttonAddValues = new System.Windows.Forms.Button();
+            this.ColumnNumPlate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnAuto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnService = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnMaxWeight = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnWhere = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnV_avrg = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnFuel = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControlMain.SuspendLayout();
             this.tabPageTable.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -71,13 +73,15 @@ namespace Tyuiu.ZaripovEO.Sprint7.V8
             this.tabPageMenu.Location = new System.Drawing.Point(4, 22);
             this.tabPageMenu.Name = "tabPageMenu";
             this.tabPageMenu.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageMenu.Size = new System.Drawing.Size(953, 445);
+            this.tabPageMenu.Size = new System.Drawing.Size(1014, 540);
             this.tabPageMenu.TabIndex = 0;
             this.tabPageMenu.Text = "Главное меню";
             this.tabPageMenu.UseVisualStyleBackColor = true;
             // 
             // tabPageTable
             // 
+            this.tabPageTable.Controls.Add(this.buttonAddValues);
+            this.tabPageTable.Controls.Add(this.labelPlate);
             this.tabPageTable.Controls.Add(this.comboBox1);
             this.tabPageTable.Controls.Add(this.buttonChoose);
             this.tabPageTable.Controls.Add(this.dataGridView1);
@@ -89,11 +93,22 @@ namespace Tyuiu.ZaripovEO.Sprint7.V8
             this.tabPageTable.Text = "Таблица";
             this.tabPageTable.UseVisualStyleBackColor = true;
             // 
+            // comboBox1
+            // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(14, 127);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(132, 21);
+            this.comboBox1.TabIndex = 2;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.comboBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.comboBox1_KeyPress);
+            // 
             // buttonChoose
             // 
             this.buttonChoose.Location = new System.Drawing.Point(11, 16);
             this.buttonChoose.Name = "buttonChoose";
-            this.buttonChoose.Size = new System.Drawing.Size(122, 28);
+            this.buttonChoose.Size = new System.Drawing.Size(135, 59);
             this.buttonChoose.TabIndex = 1;
             this.buttonChoose.Text = "Выбрать CSV...";
             this.buttonChoose.UseVisualStyleBackColor = true;
@@ -106,12 +121,12 @@ namespace Tyuiu.ZaripovEO.Sprint7.V8
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ID,
             this.ColumnNumPlate,
             this.ColumnAuto,
+            this.ColumnService,
+            this.ColumnMaxWeight,
             this.ColumnWhere,
             this.ColumnV_avrg,
-            this.ColumnMaxWeight,
             this.ColumnFuel});
             this.dataGridView1.Location = new System.Drawing.Point(176, 6);
             this.dataGridView1.Name = "dataGridView1";
@@ -119,57 +134,12 @@ namespace Tyuiu.ZaripovEO.Sprint7.V8
             this.dataGridView1.Size = new System.Drawing.Size(826, 526);
             this.dataGridView1.TabIndex = 0;
             // 
-            // ID
-            // 
-            this.ID.HeaderText = "№";
-            this.ID.Name = "ID";
-            this.ID.ReadOnly = true;
-            this.ID.Width = 30;
-            // 
-            // ColumnNumPlate
-            // 
-            this.ColumnNumPlate.HeaderText = "Гос. Номер";
-            this.ColumnNumPlate.Name = "ColumnNumPlate";
-            this.ColumnNumPlate.ReadOnly = true;
-            // 
-            // ColumnAuto
-            // 
-            this.ColumnAuto.HeaderText = "Марка авто";
-            this.ColumnAuto.Name = "ColumnAuto";
-            this.ColumnAuto.ReadOnly = true;
-            // 
-            // ColumnWhere
-            // 
-            this.ColumnWhere.HeaderText = "Местонахождение";
-            this.ColumnWhere.Name = "ColumnWhere";
-            this.ColumnWhere.ReadOnly = true;
-            this.ColumnWhere.Width = 120;
-            // 
-            // ColumnV_avrg
-            // 
-            this.ColumnV_avrg.HeaderText = "V-средняя";
-            this.ColumnV_avrg.Name = "ColumnV_avrg";
-            this.ColumnV_avrg.ReadOnly = true;
-            // 
-            // ColumnMaxWeight
-            // 
-            this.ColumnMaxWeight.HeaderText = "Грузоподъёмность";
-            this.ColumnMaxWeight.Name = "ColumnMaxWeight";
-            this.ColumnMaxWeight.ReadOnly = true;
-            this.ColumnMaxWeight.Width = 120;
-            // 
-            // ColumnFuel
-            // 
-            this.ColumnFuel.HeaderText = "Расход топлива";
-            this.ColumnFuel.Name = "ColumnFuel";
-            this.ColumnFuel.ReadOnly = true;
-            // 
             // tabPageChart
             // 
             this.tabPageChart.Location = new System.Drawing.Point(4, 22);
             this.tabPageChart.Name = "tabPageChart";
             this.tabPageChart.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageChart.Size = new System.Drawing.Size(953, 445);
+            this.tabPageChart.Size = new System.Drawing.Size(1014, 540);
             this.tabPageChart.TabIndex = 2;
             this.tabPageChart.Text = "График";
             this.tabPageChart.UseVisualStyleBackColor = true;
@@ -216,15 +186,68 @@ namespace Tyuiu.ZaripovEO.Sprint7.V8
             // 
             this.openFileDialogCSV.FileName = "openFileDialogCSV";
             // 
-            // comboBox1
+            // labelPlate
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(11, 62);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 2;
-            this.comboBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.comboBox1_KeyPress);
+            this.labelPlate.AutoSize = true;
+            this.labelPlate.Location = new System.Drawing.Point(11, 111);
+            this.labelPlate.Name = "labelPlate";
+            this.labelPlate.Size = new System.Drawing.Size(66, 13);
+            this.labelPlate.TabIndex = 3;
+            this.labelPlate.Text = "Гос. номер:";
+            // 
+            // buttonAddValues
+            // 
+            this.buttonAddValues.Location = new System.Drawing.Point(14, 462);
+            this.buttonAddValues.Name = "buttonAddValues";
+            this.buttonAddValues.Size = new System.Drawing.Size(132, 70);
+            this.buttonAddValues.TabIndex = 4;
+            this.buttonAddValues.Text = "Добавить новые данные";
+            this.buttonAddValues.UseVisualStyleBackColor = true;
+            this.buttonAddValues.Click += new System.EventHandler(this.buttonAddValues_Click);
+            // 
+            // ColumnNumPlate
+            // 
+            this.ColumnNumPlate.HeaderText = "Гос. Номер";
+            this.ColumnNumPlate.Name = "ColumnNumPlate";
+            this.ColumnNumPlate.ReadOnly = true;
+            // 
+            // ColumnAuto
+            // 
+            this.ColumnAuto.HeaderText = "Марка авто";
+            this.ColumnAuto.Name = "ColumnAuto";
+            this.ColumnAuto.ReadOnly = true;
+            // 
+            // ColumnService
+            // 
+            this.ColumnService.HeaderText = "Тех. состояние";
+            this.ColumnService.Name = "ColumnService";
+            this.ColumnService.ReadOnly = true;
+            // 
+            // ColumnMaxWeight
+            // 
+            this.ColumnMaxWeight.HeaderText = "Грузоподъёмность";
+            this.ColumnMaxWeight.Name = "ColumnMaxWeight";
+            this.ColumnMaxWeight.ReadOnly = true;
+            this.ColumnMaxWeight.Width = 120;
+            // 
+            // ColumnWhere
+            // 
+            this.ColumnWhere.HeaderText = "Местонахождение";
+            this.ColumnWhere.Name = "ColumnWhere";
+            this.ColumnWhere.ReadOnly = true;
+            this.ColumnWhere.Width = 120;
+            // 
+            // ColumnV_avrg
+            // 
+            this.ColumnV_avrg.HeaderText = "V-средняя";
+            this.ColumnV_avrg.Name = "ColumnV_avrg";
+            this.ColumnV_avrg.ReadOnly = true;
+            // 
+            // ColumnFuel
+            // 
+            this.ColumnFuel.HeaderText = "Расход топлива";
+            this.ColumnFuel.Name = "ColumnFuel";
+            this.ColumnFuel.ReadOnly = true;
             // 
             // FormMain
             // 
@@ -240,6 +263,7 @@ namespace Tyuiu.ZaripovEO.Sprint7.V8
             this.Load += new System.EventHandler(this.FormMain_Load);
             this.tabControlMain.ResumeLayout(false);
             this.tabPageTable.ResumeLayout(false);
+            this.tabPageTable.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -257,17 +281,19 @@ namespace Tyuiu.ZaripovEO.Sprint7.V8
         private System.Windows.Forms.Label labelName;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label labelPersonal;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnNumPlate;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnAuto;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnWhere;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnV_avrg;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnMaxWeight;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnFuel;
         private System.Windows.Forms.Button buttonChoose;
         private System.Windows.Forms.OpenFileDialog openFileDialogCSV;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label labelPlate;
+        private System.Windows.Forms.Button buttonAddValues;
+        public System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnNumPlate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnAuto;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnService;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnMaxWeight;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnWhere;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnV_avrg;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnFuel;
     }
 }
 

@@ -13,16 +13,32 @@ namespace Tyuiu.ZaripovEO.Sprint7.V8
 {
     public partial class FormMain : Form
     {
+        public static int ugly = 0;
         public FormMain()
         {
             InitializeComponent();
-            FormWelcomeCheck IDCheck = new FormWelcomeCheck();
-            IDCheck.ShowDialog();
+            if (ugly==0)
+            {
+                FormWelcome IDCheck = new FormWelcome();
+                IDCheck.ShowDialog();
+                ugly++; 
+            }
         }
-
+        public void insert_data(string[] str)
+        {
+            dataGridView1.Rows.Add();
+            //dataGridView1.Rows.Add(str[0], str[1], str[2], str[3], str[4], str[5], str[6]);
+        }
         private void FormMain_Load(object sender, EventArgs e)
         {
-            labelPersonal.Text = $"Сотрудник:{FormWelcomeCheck.Name}";
+            if (FormWelcome.u == 1)
+            {
+                Close();
+            }
+            else
+            {
+                labelPersonal.Text = $"Сотрудник:{FormWelcome.Name}";
+            }
         }
 
         static string filePath;
@@ -57,10 +73,8 @@ namespace Tyuiu.ZaripovEO.Sprint7.V8
                     dataGridView1.Rows[r].Cells[c].Value = arrayValues[r, c];
                 }
             }
-            comboBox1.DisplayMember = "Номер";
-            comboBox1.ValueMember = "Бля";
             arrayPlates = new string[rows, columns];
-            for (int i = 1; i < arrayValues.GetLength(0); i++)
+            for (int i = 0; i < arrayValues.GetLength(0); i++)
             {
                 comboBox1.Items.Add(arrayValues[i, 0]);
             }
@@ -93,6 +107,35 @@ namespace Tyuiu.ZaripovEO.Sprint7.V8
         private void comboBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
             e.KeyChar = (char)Keys.None;
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            {
+
+                for (int i = 0; i < dataGridView1.RowCount; i++)
+                {
+                    dataGridView1.Rows[i].Selected = false;
+                    for (int j = 0; j < dataGridView1.ColumnCount; j++)
+                    {
+                        if (dataGridView1.Rows[i].Cells[j].Value != null)
+                        {
+                            if (dataGridView1.Rows[i].Cells[j].Value.ToString().Contains(comboBox1.Text))
+                            {
+                                dataGridView1.Rows[i].Selected = true;
+                                break;
+                            }
+                        }        
+                    }
+                }
+            }
+        }
+
+        private void buttonAddValues_Click(object sender, EventArgs e)
+        {
+            FormAdd formAdd = new FormAdd();
+            formAdd.Owner = this;
+            formAdd.Show();
         }
     }
 }
