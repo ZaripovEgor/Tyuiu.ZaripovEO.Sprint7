@@ -117,8 +117,16 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="photo_2023-12-09_16-28-18" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\photo_2023-12-09_16-28-18.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="richTextBox1.Text" xml:space="preserve">
+    <value>Для начала работы необходимо выбрать таблицу, путём нажатия кнопки "Выбрать CSV..."
+
+Для удаления ячейки, выделите её через список строк и нажмите "Удалить строку"
+
+Чтобы обновить список строк, нажмите "Обновить"
+
+Чтобы запомнить изменения, нажмите "Сохранить" и вручную выберете путь и имя файла
+
+Для перехода на вкладку "Добавление новых значений", нажмите на одноимённую кнопку
+</value>
   </data>
 </root>

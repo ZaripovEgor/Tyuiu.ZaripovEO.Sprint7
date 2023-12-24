@@ -78,30 +78,35 @@ namespace Tyuiu.ZaripovEO.Sprint7.V8
             // 
             // buttonEnter
             // 
-            this.buttonEnter.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonEnter.BackColor = System.Drawing.Color.RoyalBlue;
+            this.buttonEnter.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonEnter.ForeColor = System.Drawing.Color.White;
             this.buttonEnter.Location = new System.Drawing.Point(336, 123);
             this.buttonEnter.Name = "buttonEnter";
             this.buttonEnter.Size = new System.Drawing.Size(112, 37);
             this.buttonEnter.TabIndex = 3;
             this.buttonEnter.Text = "Войти";
-            this.buttonEnter.UseVisualStyleBackColor = true;
+            this.buttonEnter.UseVisualStyleBackColor = false;
             this.buttonEnter.Click += new System.EventHandler(this.buttonEnter_Click);
             // 
             // buttonAsGuest
             // 
-            this.buttonAsGuest.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonAsGuest.BackColor = System.Drawing.Color.RoyalBlue;
+            this.buttonAsGuest.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonAsGuest.ForeColor = System.Drawing.Color.White;
             this.buttonAsGuest.Location = new System.Drawing.Point(18, 123);
             this.buttonAsGuest.Name = "buttonAsGuest";
-            this.buttonAsGuest.Size = new System.Drawing.Size(142, 37);
+            this.buttonAsGuest.Size = new System.Drawing.Size(175, 37);
             this.buttonAsGuest.TabIndex = 3;
             this.buttonAsGuest.Text = "Войти как гость";
-            this.buttonAsGuest.UseVisualStyleBackColor = true;
+            this.buttonAsGuest.UseVisualStyleBackColor = false;
             this.buttonAsGuest.Click += new System.EventHandler(this.button1_Click);
             // 
-            // FormWelcomeCheck
+            // FormWelcome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(461, 172);
             this.Controls.Add(this.buttonAsGuest);
             this.Controls.Add(this.buttonEnter);
